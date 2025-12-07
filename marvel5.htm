@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Персонажи</title>
+    <meta name="description" />
+    <style>
+      :root {
+        --bg: #000;
+        --fg: #fff;
+        --muted: #9aa6b2;
+        --gap: 18px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+        background: var(--bg);
+        color: var(--fg);
+        -webkit-font-smoothing: antialiased;
+        padding: 22px;
+      }
+      h1 {
+        margin: 0 0 14px 4%;
+        font-size: 1.4rem;
+        letter-spacing: 0.02em;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap);
+        justify-content: center;
+        padding: 10px 4% 60px;
+      }
+      .comic {
+        width: 190px;
+        text-align: center;
+      }
+      .comic img {
+        width: 190px;
+        height: 280px;
+        border-radius: 10px;
+        display: block;
+        object-fit: cover;
+        transition: transform 0.22s ease, box-shadow 0.22s ease;
+      }
+      .comic img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 22px #ff2b2b;
+      }
+      figcaption {
+        margin-top: 8px;
+        font-size: 15px;
+        color: var(--fg);
+      }
+      @media (max-width: 420px) {
+        .comic {
+          width: 140px;
+        }
+        .comic img {
+          width: 140px;
+          height: 210px;
+        }
+      }
+
+      a.small {
+        color: inherit;
+        text-decoration: underline;
+      }
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* телефон */
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Персонажи Марвел</h1>
+
+    <div class="gallery" role="list" aria-label="Галерея обложек комиксов">
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D1%8B%D0%B9_%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA"
+        >
+          <img
+            src="https://i.pinimg.com/originals/07/25/b8/0725b865ce82357f6608f415cf55023c.jpg"
+            alt="Comic 1"
+            loading="lazy"
+        /></a>
+        <figcaption>Железный человек</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B8%D1%82%D0%B0%D0%BD_%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0"
+        >
+          <img
+            src="https://www.soyuz.ru/public/uploads/files/2/7454367/2021011522355615c18185f7.jpg"
+            alt="Comic 2"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Капитан Америка</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A2%D0%BE%D1%80_(%D0%BC%D0%B8%D1%84%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F)"
+        >
+          <img
+            src="https://cdnn21.img.ria.ru/images/07e4/0b/17/1585982208_209:0:1141:932_1920x0_80_0_0_0864085575c3f7e62a28af4453c1dff0.jpg"
+            alt="Comic 3"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Тор</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BB%D0%BA">
+          <img
+            src="https://cdn-storage-media.tass.ru/resize/752x496/tass_media/2022/03/12/q/1647047205454097_qGDBb35I.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+
+        <figcaption>Халк</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A7%D1%91%D1%80%D0%BD%D0%B0%D1%8F_%D0%B2%D0%B4%D0%BE%D0%B2%D0%B0"
+        >
+          <img
+            src="https://zolotoy.ru/wp-content/uploads/2019/12/black-widow-scarlett-johansson-marvel-the-avengers-1200x752-850.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Чёрная вдова</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BA%D0%BE%D0%BB%D0%B8%D0%BD%D1%8B%D0%B9_%D0%B3%D0%BB%D0%B0%D0%B7_(%D0%9A%D0%BB%D0%B8%D0%BD%D1%82_%D0%91%D0%B0%D1%80%D1%82%D0%BE%D0%BD)"
+        >
+          <img
+            src="https://bloknot.ru/wp-content/uploads/2023/01/photo_2023-01-02_13-05-50-779x800.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Соколиный глаз</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BA%D1%82%D0%BE%D1%80_%D0%A1%D1%82%D1%80%D1%8D%D0%BD%D0%B4%D0%B6"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAdmUmYe-F4w83CjbeaU5_LC1byBIP1OgkGeg2UbgMkI3Ctvv7fXiiC2HZBGtcJjWcwVEirOtMQKhIM4_4j0-ZH27ACRHU1OwRwEX7j3g&s=10"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Доктор Стрендж</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A7%D1%91%D1%80%D0%BD%D0%B0%D1%8F_%D0%BF%D0%B0%D0%BD%D1%82%D0%B5%D1%80%D0%B0_(Marvel_Comics)"
+        >
+          <img
+            src="https://img05.rl0.ru/afisha/e1200x1200i/daily.afisha.ru/uploads/images/1/f3/1f3ed1628b3b86609280694158e4eb7e.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Чёрная пантера</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B8%D1%82%D0%B0%D0%BD_%D0%9C%D0%B0%D1%80%D0%B2%D0%B5%D0%BB"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/f/f1/Brie_Larson_as_Carol_Danvers.jpeg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Капитан Марвел</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%BF%D0%B0%D1%83%D0%BA"
+        >
+          <img
+            src="https://click-or-die.ru/app/uploads/2022/01/image-26-18.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Человек-паук</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%BC%D1%83%D1%80%D0%B0%D0%B2%D0%B5%D0%B9"
+        >
+          <img
+            src="https://img16.rl0.ru/afisha/e375x235p803x822f2088x1309q85i/s.afisha.ru/mediastorage/c6/fb/0d5c2c8421fd4ca4b1181ca5fbc6.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Муравей</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B0%D1%8F_%D0%92%D0%B5%D0%B4%D1%8C%D0%BC%D0%B0"
+        >
+          <img
+            src="https://www.soyuz.ru/public/uploads/files/2/7481096/202204061652410b17145929.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Алая Ведьма</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%B6%D0%BD_(%D0%BA%D0%B8%D0%BD%D0%BE%D0%B2%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_Marvel)"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/f/fc/Paul_Bettany_as_Vision.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Вижен</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BA%D0%BE%D0%BB_(Marvel_Comics)"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/thumb/6/62/Anthony_Mackie_as_Captain_America.png/250px-Anthony_Mackie_as_Captain_America.png"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Сокол</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%97%D0%B2%D1%91%D0%B7%D0%B4%D0%BD%D1%8B%D0%B9_%D0%9B%D0%BE%D1%80%D0%B4"
+        >
+          <img
+            src="https://news.store.rambler.ru/img/4babccc68daa4b720dab5ec12fa7202e?img-format=auto&img-1-resize=height:400,fit:max&img-2-filter=sharpen"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Звёздный лорд</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D0%BC%D0%BE%D1%80%D0%B0"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/thumb/d/da/Gamora.jpg/500px-Gamora.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Гамора</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%BA%D0%B5%D1%82%D0%B0_(%D0%BA%D0%B8%D0%BD%D0%BE%D0%B2%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_Marvel)"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/c/ce/Rocket_in_Avengers_Endgame.jpeg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Ракета</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D1%83%D1%82">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/ac/Groot_Marvel.jpg/303px-Groot_Marvel.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Грут</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%94%D1%80%D0%B0%D0%BA%D1%81_%D0%A0%D0%B0%D0%B7%D1%80%D1%83%D1%88%D0%B8%D1%82%D0%B5%D0%BB%D1%8C"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/3/3d/Dave_Bautista_as_Drax.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Дракс Разрушитель</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://ru.wikipedia.org/wiki/%D0%A2%D0%B0%D0%BD%D0%BE%D1%81">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/7/7b/Josh_Brolin_as_Thanos.jpeg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Танос</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BA%D0%B8">
+          <img
+            src="https://s0.rbk.ru/v6_top_pics/media/img/0/64/347002283079640.webp   "
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Локи</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D1%8C%D1%82%D1%80%D0%BE%D0%BD"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/thumb/b/b3/Ultron.jpg/500px-Ultron.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Ультрон</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B9_%D0%A7%D0%B5%D1%80%D0%B5%D0%BF"
+        >
+          <img
+            src="https://sharetv.ru/wp-content/uploads/2025/04/mstiteli-1.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Красный Череп</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BB%D1%91%D0%BD%D1%8B%D0%B9_%D0%B3%D0%BE%D0%B1%D0%BB%D0%B8%D0%BD"
+        >
+          <img
+            src="https://i.ytimg.com/vi/IpkIhqjqqDM/maxresdefault.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Зелёный гоблин</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BA%D1%82%D0%BE%D1%80_%D0%9E%D1%81%D1%8C%D0%BC%D0%B8%D0%BD%D0%BE%D0%B3"
+        >
+          <img
+            src="https://i.ytimg.com/vi/55AYH8YgN-U/sddefault.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Доктор Осьминог</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BD%D0%BE%D0%BC">
+          <img
+            src="https://icdn.lenta.ru/images/2018/10/05/15/20181005151515506/detail_0cc045da13d4b7d6f8109772b68d0755.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Веном</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BD%D0%B0%D0%B6"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/archive/1/10/20211130054705%21Carnage_%28Venom_Let_There_Be_Carnage%29.jpeg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Карнаж</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B3%D0%BD%D0%B5%D1%82%D0%BE_(Marvel_Comics)"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/d/d1/Ian_McKellen_Magneto.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Магнето</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%BA_%D0%A4%D1%8C%D1%8E%D1%80%D0%B8_(%D0%BA%D0%B8%D0%BD%D0%BE%D0%B2%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_Marvel)"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/1/10/Nick_Fury_in_film.jpeg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Ник Фьюри</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A5%D0%B5%D0%BB%D0%B0_(Marvel_Comics)"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/thumb/a/af/Hela_Marvel.png/330px-Hela_Marvel.png"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Хелла</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D1%81%D0%BE%D0%BC%D0%B0%D1%85%D0%B0_(Marvel_Comics)"
+        >
+          <img
+            src="https://rg.ru/uploads/images/2022/08/25/rosomah_214.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Росомаха</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D0%B3%D0%B3%D0%B8_%D0%9A%D0%B0%D1%80%D1%82%D0%B5%D1%80_(%D0%BA%D0%B8%D0%BD%D0%BE%D0%B2%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_Marvel)"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/1/15/Hayley_Atwell_as_Peggy_Carter.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Пегги Картер</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%94%D1%8D%D0%B4%D0%BF%D1%83%D0%BB"
+        >
+          <img
+            src="https://lh6.googleusercontent.com/proxy/1fXL4EBy82GLj1J35BEE46bCEX2RM3UtLbw3Rwzddqwg5ewamMw16PiqDjQBYeQldrTBHp5vs783aFUXRKiN82yg5g"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Дэдпул</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D1%80%D0%B2%D0%B8%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B0_(Marvel_Comics)"
+        >
+          <img
+            src="https://24smi.org/public/media/resize/800x-/2017/10/24/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_2k1sISs.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Сорвиголова</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a
+          href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%B7%D1%80%D0%B0%D1%87%D0%BD%D1%8B%D0%B9_%D0%B3%D0%BE%D0%BD%D1%89%D0%B8%D0%BA"
+        >
+          <img
+            src="https://monsterface.ru/wp-content/uploads/2021/09/ghost_rider-1.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Призрачный гонщик</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D1%8D%D0%B9%D0%B4">
+          <img
+            src="https://i.ytimg.com/vi/hTi90qh8gTY/maxresdefault.jpg"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Блэйд</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

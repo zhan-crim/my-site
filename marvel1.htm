@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Marvel Comics</title>
+    <meta name="description" />
+    <style>
+      :root {
+        --bg: #000;
+        --fg: #fff;
+        --muted: #9aa6b2;
+        --gap: 18px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+        background: var(--bg);
+        color: var(--fg);
+        -webkit-font-smoothing: antialiased;
+        padding: 22px;
+      }
+      h1 {
+        margin: 0 0 14px 4%;
+        font-size: 1.4rem;
+        letter-spacing: 0.02em;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap);
+        justify-content: center;
+        padding: 10px 4% 60px;
+      }
+      .comic {
+        width: 190px;
+        text-align: center;
+      }
+      .comic img {
+        width: 190px;
+        height: 280px;
+        border-radius: 10px;
+        display: block;
+        object-fit: cover;
+        transition: transform 0.22s ease, box-shadow 0.22s ease;
+      }
+      .comic img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 22px #ff2b2b;
+      }
+      figcaption {
+        margin-top: 8px;
+        font-size: 15px;
+        color: var(--fg);
+      }
+      @media (max-width: 420px) {
+        .comic {
+          width: 140px;
+        }
+        .comic img {
+          width: 140px;
+          height: 210px;
+        }
+      }
+
+      a.small {
+        color: inherit;
+        text-decoration: underline;
+      }
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* телефон */
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MARVEL COMICS</h1>
+
+    <div class="gallery" role="list" aria-label="Галерея обложек комиксов">
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/~2EAAOSwUdNmLJwN/s-l1600.webp"
+          alt="Comic 1"
+          loading="lazy"
+          title="US $ 399,99"
+        />
+        <figcaption>Marvel Comics #1 (1939)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/m3EAAOSww6Zm5jV5/s-l1600.webp"
+          alt="Comic 2"
+          loading="lazy"
+          title="US $ 49,95"
+        />
+        <figcaption>Captain America Comics #1 (1941)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://cdn.marvel.com/u/prod/marvel/i/mg/6/20/519b7424af23c/clean.jpg"
+          alt="Comic 3"
+          loading="lazy"
+          title="US $ 276,88"
+        />
+        <figcaption>Fantastic Four #1 (1961)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/ESQAAOSwXF5dHQsR/s-l1600.webp"
+          alt="Comic 4"
+          loading="lazy"
+          title="US $ 99,99"
+        />
+        <figcaption>The Amazing Spider-Man (1962)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/PisAAOSwqO9nBETG/s-l1600.webp"
+          alt="Comic 5"
+          loading="lazy"
+          title="US $ 399,00"
+        />
+        <figcaption>The Incredible Hulk (1962)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://img.gocollect.com/eyJidWNrZXQiOiJnb2NvbGxlY3QuaW1hZ2VzLnB1YiIsImtleSI6ImU0N2M3ZjYyLTBlNGYtNDY2Zi1iOTIzLTQ3NjA2N2FiYmQxNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMwMH19fQ=="
+          alt="Comic 6"
+          loading="lazy"
+          title="US $ 16 499,00"
+        />
+        <figcaption>Amazing Fantasy #15 (1962)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRdW6ubx6w0DLpA4XeQw0V52Y3c797WEBJKNgboWA4vYJB6n6HmsUadb_X9oZyjTwqrh7RohDEfA9L_1KDFAG-cqsAjU_zBoWINjcO4Rib1wEiDvp-jBbMdzsKdy13sJTesoImMyg&usqp=CAc"
+          alt="Comic 7"
+          loading="lazy"
+          title="US $ 524,96"
+        />
+        <figcaption>Journey into Mystery #83 (1962)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://m.media-amazon.com/images/I/81Lw7KtaOUL._AC_UF1000,1000_QL80_.jpg"
+          loading="lazy"
+          title="US $ 2 399,99"
+        />
+        <figcaption>Tales of Suspense #39 (1963)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://m.media-amazon.com/images/I/91XvBjgOx2L._UF1000,1000_QL80_.jpg"
+          alt="Comic 9"
+          loading="lazy"
+          title="US $ 4 934,00"
+        />
+        <figcaption>X-Men #1 (1963)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/zhoAAeSwFFRoAsen/s-l1600.webp"
+          alt="Comic 10"
+          loading="lazy"
+          title="US $ 1 759,00"
+        />
+        <figcaption>The Avengers #1 (1963)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/7mEAAOSwP8dm4f3l/s-l1600.webp"
+          alt="Comic 11"
+          loading="lazy"
+          title="US $ 2 299,00"
+        />
+        <figcaption>Daredevil #1 (1964)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/1z0AAeSwmd5oYufY/s-l1600.webp"
+          alt="Comic 12"
+          loading="lazy"
+          title="US $ 1 499,99"
+        />
+        <figcaption>Doctor Strange (Strange Tales #110, 1963)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/JhQAAOSwxV9nnDHq/s-l1600.webp"
+          alt="Comic 13"
+          loading="lazy"
+          title="US $ 195,00"
+        />
+        <figcaption>Silver Surfer #1 (1968)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/FZEAAOSwvdZkphAP/s-l1600.webp"
+          alt="Comic 14"
+          loading="lazy"
+          title="US $ 5,99"
+        />
+        <figcaption>The Amazing Spider-Man #121–122 (1973)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/d0wAAOSwTO5m4pIM/s-l1600.webp"
+          alt="Comic 15"
+          loading="lazy"
+          title="US $ 499,99"
+        />
+        <figcaption>The Incredible Hulk #181 (1974)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/aF4AAeSw1Zlof6Hw/s-l1600.webp"
+          alt="Comic 16"
+          loading="lazy"
+          title="US $ 4 599,00"
+        />
+
+        <figcaption>Giant-Size X-Men #1 (1975)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/aF4AAeSw1Zlof6Hw/s-l1600.webp"
+          alt="Comic 17"
+          loading="lazy"
+          title="US $ 4 599,00"
+        />
+        <figcaption>The Uncanny X-Men (1975–1980)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/vzkAAeSw4g9o6-Wc/s-l1600.webp"
+          alt="Comic 18"
+          loading="lazy"
+          title="US $ 400,00"
+        />
+        <figcaption>The Dark Phoenix Saga (1980)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/A-4AAOSwMpNmtnit/s-l1600.webp"
+          alt="Comic 19"
+          loading="lazy"
+          title="US $ 999,99"
+        />
+        <figcaption>the infinity gauntlet (1991)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/zd0AAeSwtgxo3Y1S/s-l1600.webp"
+          alt="Comic 20"
+          loading="lazy"
+          title="US $ 84,00"
+        />
+        <figcaption>Secret Wars (1984)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/cggAAOSw9S9mg4-T/s-l1600.webp"
+          alt="Comic 21"
+          loading="lazy"
+          title="US $ 39,99"
+        />
+        <figcaption>The Infinity Gauntlet (1991)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/WcMAAOSwMpJoVyzb/s-l1600.webp"
+          alt="Comic 22"
+          loading="lazy"
+          title="US $ 44,99"
+        />
+        <figcaption>The Infinity War (1992)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/2DMAAeSwVTRo0PW1/s-l1600.webp"
+          alt="Comic 23"
+          loading="lazy"
+          title="US $ 8,99"
+        />
+        <figcaption>The Infinity Crusade (1993)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/rpcAAOSw7FVj0rFy/s-l1600.webp"
+          alt="Comic 24"
+          loading="lazy"
+          title="US $ 34,99"
+        />
+        <figcaption>Age of Apocalypse (1995)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/FeMAAOSwN6llZ8ws/s-l1600.webp"
+          alt="Comic 25"
+          loading="lazy"
+          title="US $ 6,99"
+        />
+        <figcaption>Onslaught Saga (1996)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/EDUAAOSwdPpn1JDP/s-l1600.webp"
+          alt="Comic 26"
+          loading="lazy"
+          title="US $ 6,48"
+        />
+        <figcaption>Avengers: Heroes Return (1998)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/CxQAAOSwk69fWQKw/s-l1600.webp"
+          alt="Comic 27"
+          loading="lazy"
+          title="US $ 61,70"
+        />
+        <figcaption>Ultimate Spider-Man (2000)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/EvAAAOSw3utejHmV/s-l1600.webp"
+          alt="Comic 28"
+          loading="lazy"
+          title="US $ 45,99"
+        />
+        <figcaption>Ultimate X-Men (2001)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/z1gAAOSwN4NkpwLn/s-l1600.webp"
+          alt="Comic 29"
+          loading="lazy"
+          title="US $ 19,99"
+        />
+        <figcaption>The Ultimates (2002)</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <img
+          src="https://i.ebayimg.com/images/g/3egAAeSwrwdo8llt/s-l1600.webp"
+          alt="Comic 30"
+          loading="lazy"
+          title="US $ 19,95"
+        />
+        <figcaption>House of M (2005)</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Сериалы</title>
+    <meta name="description" />
+    <style>
+      :root {
+        --bg: #000;
+        --fg: #fff;
+        --muted: #9aa6b2;
+        --gap: 18px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Times New Roman", Times, serif;
+        background: var(--bg);
+        color: var(--fg);
+        -webkit-font-smoothing: antialiased;
+        padding: 22px;
+      }
+      h1 {
+        margin: 0 0 14px 4%;
+        font-size: 1.4rem;
+        letter-spacing: 0.02em;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap);
+        justify-content: center;
+        padding: 10px 4% 60px;
+      }
+      .comic {
+        width: 190px;
+        text-align: center;
+      }
+      .comic img {
+        width: 190px;
+        height: 280px;
+        border-radius: 10px;
+        display: block;
+        object-fit: cover;
+        transition: transform 0.22s ease, box-shadow 0.22s ease;
+      }
+      .comic img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 22px #ff2b2b;
+      }
+      figcaption {
+        margin-top: 8px;
+        font-size: 15px;
+        color: var(--fg);
+      }
+      @media (max-width: 420px) {
+        .comic {
+          width: 140px;
+        }
+        .comic img {
+          width: 140px;
+          height: 210px;
+        }
+      }
+
+      a.small {
+        color: inherit;
+        text-decoration: underline;
+      }
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* телефон */
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Сериалы Марвел</h1>
+
+    <div class="gallery" role="list" aria-label="Галерея обложек комиксов">
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/33038-vanda-vizhn.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/f3f/49c51a1178571da94606a8f5b5d22.webp"
+            alt="Comic 1"
+            loading="lazy"
+        /></a>
+        <figcaption>Ванда\Вижн</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://kinogo-kz.net/serialy/65769-sokol-i-zimnij-soldat.html"
+        >
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/feb/24d82a0452c1e363d2e70ba2e421d.webp"
+            alt="Comic 2"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Сокол и Зимний солдат</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/zarubezhnye-serialy/44476-loki.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/a11/1e11e0b24375e6de614352c52759b.webp"
+            alt="Comic 3"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Локи</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/multserialy/46260-chto-esli.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/56e/98fa0a2ac0733d2fe54883c57dd7a.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+
+        <figcaption>Что, если...?</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://kinogo-kz.net/zarubezhnye-serialy/46958-sokolinyj-glaz.html"
+        >
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/d18/2337145e5c19f65abff598a0169fa.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Соколиный глаз</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/original/48427-miss-marvel.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/c3f/eb89cb2cc05bd7ed156b6bb33e1c0.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Мисс Марвел</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/original/48071-lunnyj-rycar.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/7f9/cd08ea05d3be004be46c63da5b60d.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Лунный Рыцарь</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://kinogo-kz.net/original/48814-zhenschina-halk-advokat.html"
+        >
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/63e/9ac36c3d09e7f8327ddf0b093c5cd.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Женщина-Халк:Адвокат</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/original/48770-ja-est-grut.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/568/159c3e4fc3eb9f42e4b50e3cb5d63.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Я есть Грут</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/50176-sekretnoe-vtorzhenie.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/1c0/67d023d6b828ff3114ef7442192a0.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Секретное вторжение</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/82586-jeho.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/a6f/90b6addb47f28fc7bc8460c6c462e.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Эхо</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/original/50028-agata-koven-haosa.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/1f7/9b241c2bf44626055977ce0d82069.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Агата</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/110402-zheleznoe-serdtse.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/69b/6e6ef7ef00c50cefd9529e501ebce.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Железное Сердце</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a
+          href="https://kinogo-kz.net/serialy/107619-sorvigolova-rozhdennyy-zanovo.html"
+        >
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/be6/5fe146073d4f666bd4a638afb762a.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Сорвиголова: Рожденный заново</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/33852-agenty-schit.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/e75/cea43e47a991f2c843d9732df17b8.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Агенты «Щ.И.Т.»</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/33169-agent-karter.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/99b/f26477314f00affa54ecb0ae1f705.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Агент Картер</figcaption>
+      </figure>
+
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/34140-zaschitniki.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/af1/e587c52fe7c119f5393ccec01893b.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Защитники</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/34879-karatel.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/38f/5250743979bbe5299657817700d3a.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Каратель</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/original/36672-dzhessika-dzhons.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/98e/d41264cc3b9a16f7055880432e1c2.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Джессика Джонс</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/33470-ljuk-kejdzh.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/cd2/dedccbe3f3433af699b4084375d19.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Люк Кейдж</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/34387-zheleznyj-kulak.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/584/5d7860d37c15643e5653e93bfd527.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Железный кулак</figcaption>
+      </figure>
+      <figure class="comic" role="listitem">
+        <a href="https://kinogo-kz.net/serialy/35454-plasch-i-kinzhal.html">
+          <img
+            src="https://kinogo-kz.net/uploads/mini/fullstory/61a/9408741c9858478283d9de59d2719.webp"
+            alt="Comic 4"
+            loading="lazy"
+          />
+        </a>
+        <figcaption>Плащ и Кинжал</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

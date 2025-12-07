@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Games</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        background-color: #000;
+        color: #fff;
+      }
+      h2 {
+        margin-left: 5%;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      .game {
+        width: 190px;
+        text-align: center;
+      }
+      .game img {
+        width: 190px;
+        height: 280px;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+      .game img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #f00;
+      }
+      figcaption {
+        margin-top: 8px;
+        font-size: 15px;
+      }
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* телефон */
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>MARVEL GAMES</h2>
+
+    <div class="gallery">
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marvelswolverine_lob_crd_02.jpg"
+          alt="Wolverine"
+        />
+        <figcaption>Marvel's Wolverine (2026)</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marvelsblade_lob_crd_01.jpg"
+          alt="Blade"
+        />
+        <figcaption>Marvel's Blade</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marvel1943riseofhydra_lob_crd_01.jpg"
+          alt="1943"
+        />
+        <figcaption>Marvel 1943: Восстание Гидры</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marvelsdeadpoolvr_lob_crd_01.jpg"
+          alt="Deadpool VR"
+        />
+        <figcaption>Marvel's Deadpool VR</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marvelcosmicinvasion_lob_crd_01.jpg"
+          alt="Cosmic Invasion"
+        />
+        <figcaption>Marvel: Космическое вторжение</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marvelmysticmayhem_lob_crd_01.jpg"
+          alt="Rivals"
+        />
+        <figcaption>Соперники Marvel</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marveltokonfightingsouls_lob_crd_01.jpg"
+          alt="Tokon"
+        />
+        <figcaption>Marvel Tokon: Сражающиеся души</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marvelvscapcom_lob_crd_01.jpg"
+          alt="Vs Capcom"
+        />
+        <figcaption>Marvel vs Capcom</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marvelsspiderman2_lob_crd_02.jpg"
+          alt="Spider-Man 2"
+        />
+        <figcaption>Marvel’s Spider-Man 2</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://cdn.marvel.com/content/1x/marvelsmidnightsuns_lob_crd_03.jpg"
+          alt="Midnight Suns"
+        />
+        <figcaption>Marvel’s Midnight Suns</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://images.immediate.co.uk/production/volatile/sites/3/2020/08/Marvels-avengers-d5de2e1.jpg?quality=90&resize=780,520"
+          alt="Avengers"
+        />
+        <figcaption>Avengers</figcaption>
+      </figure>
+
+      <figure class="game">
+        <img
+          src="https://image.api.playstation.com/vulcan/ap/rnd/202106/0215/Pw9cWnyqkix3EoCOGqrN1cgN.png"
+          alt="Guardians"
+        />
+        <figcaption>Guardians</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

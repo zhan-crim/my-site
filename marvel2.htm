@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Фильмы Marvel</title>
+    <style>
+      body {
+        background-color: black;
+        overflow-x: hidden;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      h2 {
+        color: red;
+        margin-left: 5%;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      /* --- Контейнер со всеми фильмами --- */
+      .movies {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 30px;
+        padding: 20px 5%;
+      }
+
+      /* --- Один постер --- */
+      figure {
+        text-align: center;
+        margin: 0;
+      }
+
+      figure img {
+        width: 195px;
+        height: 292px;
+        border-radius: 10px;
+        transition: 0.3s;
+      }
+
+      figure img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #f00;
+      }
+
+      figcaption {
+        margin-top: 8px;
+        color: white;
+      }
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* телефон */
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>ФИЛЬМЫ MARVEL</h2>
+
+    <div class="movies">
+      <figure>
+        <a
+          href="https://kinogo.am/109184-djedpul-i-rossomaha-2024.html"
+          target="_blank"
+        >
+          <img
+            src="https://cdn.marvel.com/content/1x/deadpoolandwolverine_lob_crd_03.jpg"
+          />
+        </a>
+        <figcaption>Дэдпул и Росомаха</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://kinogo.am/24627-tor.html" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/f/fc/Thor_poster.jpg"
+          />
+        </a>
+        <figcaption>Тор</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://kinogo.am/27285-pervyj-mstitel.html" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/4/44/CaptainAmerica.jpg"
+          />
+        </a>
+        <figcaption>Первый Мститель</figcaption>
+      </figure>
+
+      <figure>
+        <a
+          href="https://kinogo.am/12788-zheleznyi-chelovek.html"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/thumb/3/30/Iron_man_filmposter.jpg/339px-Iron_man_filmposter.jpg"
+          />
+        </a>
+        <figcaption>Железный Человек</figcaption>
+      </figure>
+
+      <figure>
+        <a
+          href="https://kinogo.am/13164-neverojatnyj-halk.html"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/thumb/f/fa/%D0%9D%D0%B5%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D1%8B%D0%B9_%D0%A5%D0%B0%D0%BB%D0%BA.jpg/320px-%D0%9D%D0%B5%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D1%8B%D0%B9_%D0%A5%D0%B0%D0%BB%D0%BA.jpg"
+          />
+        </a>
+        <figcaption>Невероятный Халк</figcaption>
+      </figure>
+
+      <figure>
+        <a
+          href="https://kinogo.am/18858-zheleznyj-chelovek-2.html"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/thumb/8/85/IronMan2.jpg/337px-IronMan2.jpg"
+          />
+        </a>
+        <figcaption>Железный Человек 2</figcaption>
+      </figure>
+
+      <figure>
+        <a
+          href="https://kinogo.am/19935-zheleznyj-chelovek-3.html"
+          target="_blank"
+        >
+          <img
+            src="https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/272776a1-9beb-45a9-8e02-867ba9c7f571/220x330"
+          />
+        </a>
+        <figcaption>Железный Человек 3</figcaption>
+      </figure>
+
+      <figure>
+        <a
+          href="https://kinogo.am/18175-tor-2-carstvo-tmy.html"
+          target="_blank"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/ru/0/04/Thor_The_Dark_World.jpg"
+          />
+        </a>
+        <figcaption>Тор 2: Царство Тьмы</figcaption>
+      </figure>
+
+      <figure>
+        <a
+          href="https://kinogo.am/14820-pervyj-mstitel-drugaja-vojna.html"
+          target="_blank"
+        >
+          <img
+            src="https://kz.rezka.art/uploads/posts/2021-06/1624920628-805912146.jpg"
+          />
+        </a>
+        <figcaption>Первый Мститель: Другая война</figcaption>
+      </figure>
+
+      <figure>
+        <a
+          href="https://kinogo.am/12225-strazhi-galaktiki.html"
+          target="_blank"
+        >
+          <img
+            src="https://kz.rezka.art/uploads/posts/2021-06/1625003481-1683018100.jpg"
+          />
+        </a>
+        <figcaption>Стражи Галактики</figcaption>
+      </figure>
+
+      <figure>
+        <a
+          href="https://kinogo.am/26519-mstiteli-jera-altrona-m1.html"
+          target="_blank"
+        >
+          <img
+            src="https://kz.rezka.art/uploads/posts/2021-06/1624958999-147838130.jpg"
+          />
+        </a>
+        <figcaption>Мстители: Эра Альтрона</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://kinogo.am/26420-chelovek-muravej.html" target="_blank">
+          <img
+            src="https://kz.rezka.art/uploads/posts/2021-06/1624972234-1080332510.jpg"
+          />
+        </a>
+        <figcaption>Человек-Муравей</figcaption>
+      </figure>
+      <figure>
+        <a
+          href="https://kinogo.am/23263-mstiteli-vojna-beskonechnosti.html"
+          target="_blank"
+        >
+          <img
+            src="https://kinogo.am/uploads/mini/minifull/c28/1585484325-2092333441.webp"
+          />
+        </a>
+        <figcaption>Мстители Война Бесконечности</figcaption>
+      </figure>
+      <figure>
+        <a
+          href="https://kinogo.am/17554-mstiteli-final-2019-l4.html"
+          target="_blank"
+        >
+          <img
+            src="https://kinogo.am/uploads/mini/minifull/644/1585414286-1933961545.webp"
+          />
+        </a>
+        <figcaption>Мстители:Финал</figcaption>
+      </figure>
+      <figure>
+        <a href="https://kinogo.am/29381-mstiteli.html" target="_blank">
+          <img
+            src="https://kinogo.am/uploads/mini/minifull/aae/1731237506-mstiteli.webp"
+          />
+        </a>
+        <figcaption>Мстители</figcaption>
+      </figure>
+      <figure>
+        <a
+          href="https://kinogo.am/53495-chelovek-pauk-net-puti-domoi-2021.html"
+          target="_blank"
+        >
+          <img
+            src="https://kinogo.am/uploads/mini/minifull/97d/1639561374-1002004435.webp"
+          />
+        </a>
+        <figcaption>Человек-паук:Нет пути домой</figcaption>
+      </figure>
+      <figure>
+        <a href="https://kinogo.am/17380-tor-ragnarek.html" target="_blank">
+          <img
+            src="https://kinogo.am/uploads/mini/minifull/325/1731247607-tor-ragnarek.webp"
+          />
+        </a>
+        <figcaption>Тор:Рагнарек</figcaption>
+      </figure>
+      <figure>
+        <a
+          href="https://kinogo.am/54187-tor-lubov-i-grom-v2.html"
+          target="_blank"
+        >
+          <img
+            src="https://kinogo.am/uploads/mini/minifull/ba1/1731237886-tor-ljubov-i-grom.webp"
+          />
+        </a>
+        <figcaption>Тор:Любовь и гром</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
